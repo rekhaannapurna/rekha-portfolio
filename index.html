@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ravipati Rekha Annapurna | IT Undergraduate & Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Ravipati Rekha Annapurna - High-performing IT undergraduate (9.29 CGPA), multi-hackathon winner, Full-Stack and IoT Developer with expertise in Java, Python, and Supabase." />
+  <meta name="keywords" content="Ravipati Rekha Annapurna, IT Undergraduate, Full Stack Developer, IoT Developer, Python, Java, Supabase, React, Hackathon Winner" />
+  <meta name="author" content="Ravipati Rekha Annapurna" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ravipati Rekha Annapurna | IT Undergraduate & Developer" />
+  <meta property="og:description" content="High-performing IT undergraduate (9.29 CGPA) and multi-hackathon winner with expertise in Data Structures, Full-Stack, and IoT development." />
+  <meta property="og:image" content="./assets/images/rekha-photo.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ravipati Rekha Annapurna | IT Undergraduate & Developer" />
+  <meta name="twitter:description" content="High-performing IT undergraduate (9.29 CGPA) and multi-hackathon winner with expertise in Data Structures, Full-Stack, and IoT development." />
+  <meta name="twitter:image" content="./assets/images/rekha-photo.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- Accessible Skip to Main Content Link -->
+  <a href="#summary" class="skip-to-content">Skip to main content</a>
+
+  <!-- Dynamic Starfield Canvas Background -->
+  <canvas id="starfield-canvas" aria-hidden="true"></canvas>
+  <div class="space-nebula-bg" aria-hidden="true"></div>
+
+  <!-- Cosmic Navigation Header -->
+  <header class="header-navbar">
+    <a href="#hero" class="nav-logo" aria-label="Ravipati Rekha Annapurna Home">
+      <div class="logo-badge" aria-hidden="true">✦</div>
+      <span>Rekha<span class="logo-accent">.dev</span></span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="desktop-nav" aria-label="Main Navigation">
+      <ul class="nav-menu">
+        <li><a href="#summary" class="nav-link active">Summary</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#leadership" class="nav-link">Leadership</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header Action Controls -->
+    <div class="header-actions">
+      <!-- Sound FX Toggle Button -->
+      <button type="button" id="sound-toggle-btn" class="icon-btn" title="Toggle Cosmic Sound FX" aria-label="Toggle Cosmic Sound FX">
+        🔊 <span class="sr-only">Sound On</span>
+      </button>
+
+      <!-- Resume Download Header Button -->
+      <a href="./assets/REKHA_RESUME.pdf" download="Ravipati_Rekha_Annapurna_Resume.pdf" class="btn btn-header-resume" title="Download Verified Resume PDF">
+        <span>📄 Resume</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" id="mobile-menu-toggle" class="mobile-toggle-btn" aria-label="Open Mobile Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <div class="drawer-header">
+      <div class="nav-logo">
+        <div class="logo-badge">✦</div>
+        <span>Rekha<span class="logo-accent">.dev</span></span>
+      </div>
+      <button type="button" id="mobile-drawer-close" class="close-btn" aria-label="Close Mobile Navigation">✕</button>
+    </div>
+    <ul class="mobile-nav-menu">
+      <li><a href="#summary" class="nav-link">Summary</a></li>
+      <li><a href="#skills" class="nav-link">Technical Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements & Honors</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#leadership" class="nav-link">Leadership & Activities</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="./assets/REKHA_RESUME.pdf" download="Ravipati_Rekha_Annapurna_Resume.pdf" class="btn btn-primary" style="width:100%;">
+        <span>📄 Download Resume PDF</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- HERO HEADER SECTION -->
+    <section id="hero" class="hero-section" aria-label="Hero Introduction">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Introduction & Contact Links -->
+          <div class="hero-text-content">
+            <div class="hero-tag">
+              <span>🚀</span> Space-Themed Developer Portfolio
+            </div>
+            
+            <h1 class="hero-title">
+              <span class="gradient-text">Ravipati Rekha Annapurna</span><br />
+              <span id="typewriter-target" class="typewriter-text"></span>
+            </h1>
+
+            <p class="hero-headline">
+              IT Undergraduate | Full-Stack Developer | IoT & AI Enthusiast
+            </p>
+
+            <!-- Resume Quick Contact Header Links -->
+            <div class="resume-contact-bar" aria-label="Contact Information">
+              <a href="tel:9398613081" class="contact-pill" title="Call Rekha">📞 9398613081</a>
+              <a href="mailto:rekhaannapurna.ravipati@gmail.com" class="contact-pill" title="Send Email">✉ rekhaannapurna.ravipati@gmail.com</a>
+              <a href="https://www.linkedin.com/in/rekha-annapurna" target="_blank" rel="noopener noreferrer" class="contact-pill" title="LinkedIn Profile">🔗 LinkedIn</a>
+              <a href="https://github.com/rekhaannapurna" target="_blank" rel="noopener noreferrer" class="contact-pill" title="GitHub Profile">💻 GitHub</a>
+            </div>
+
+            <!-- Hero Action Buttons -->
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">
+                <span>View Projects</span> ➔
+              </a>
+              <a href="./assets/REKHA_RESUME.pdf" download="Ravipati_Rekha_Annapurna_Resume.pdf" class="btn btn-secondary" title="Download Verified Resume PDF">
+                <span>📄 Download Resume</span>
+              </a>
+              <a href="#contact" class="btn btn-tertiary">
+                <span>Get In Touch</span>
+              </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div id="hero-stats-container" class="stats-bar" aria-label="Key Academic & Project Highlights">
+              <div class="stat-item">
+                <div class="stat-value">9.29</div>
+                <div class="stat-label">Academic CGPA</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">4</div>
+                <div class="stat-label">Hackathon Awards</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">3</div>
+                <div class="stat-label">Key Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">IT</div>
+                <div class="stat-label">B.Tech Specialization</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Cosmic Avatar Visual -->
+          <div class="hero-visual-container">
+            <div class="orbit-ring orbit-ring-1" aria-hidden="true"></div>
+            <div class="orbit-ring orbit-ring-2" aria-hidden="true"></div>
+            
+            <div class="hero-avatar-wrapper">
+              <img src="./assets/images/rekha-photo.jpg" alt="Ravipati Rekha Annapurna" class="hero-avatar-img" />
+            </div>
+
+            <!-- Floating Highlights -->
+            <div class="floating-badge badge-top-right">
+              <span class="badge-icon">🥇</span>
+              <div>
+                <div class="badge-label">MULTI-HACKATHON WINNER</div>
+                <div class="badge-value gold">4 Top-Tier Awards</div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <span class="badge-icon">⚡</span>
+              <div>
+                <div class="badge-label">CORE ARCHITECTURE</div>
+                <div class="badge-value cyan">Java, Python, Supabase</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: SUMMARY -->
+    <section id="summary" class="section" aria-label="Executive Summary">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Executive Overview</div>
+          <h2 class="section-title">Summary</h2>
+        </div>
+
+        <div class="glass-card summary-card">
+          <div class="summary-card-inner">
+            <div class="summary-quote-icon" aria-hidden="true">“</div>
+            <p id="summary-content-text" class="summary-text">
+              High-performing IT undergraduate (9.29 CGPA) and multi-hackathon winner with expertise in Data Structures, Full-Stack, and IoT development. Skilled in building scalable applications using Java, Python and Supabase.
+            </p>
+          </div>
+          
+          <!-- Key Core Pillar Highlights -->
+          <div class="summary-pillars-grid">
+            <div class="summary-pillar-item">
+              <div class="pillar-icon">🎓</div>
+              <div>
+                <div class="pillar-title">9.29 CGPA Academic Excellence</div>
+                <div class="pillar-sub">B.Tech in Information Technology at Vishnu Institute of Technology</div>
+              </div>
+            </div>
+            <div class="summary-pillar-item">
+              <div class="pillar-icon">🏆</div>
+              <div>
+                <div class="pillar-title">4 Top-Tier Hackathon Awards</div>
+                <div class="pillar-sub">Cross-functional team leadership across Healthcare, Agritech & IoT</div>
+              </div>
+            </div>
+            <div class="summary-pillar-item">
+              <div class="pillar-icon">⚙️</div>
+              <div>
+                <div class="pillar-title">Scalable Systems Architecture</div>
+                <div class="pillar-sub">Java, Python, Supabase, React, Flask, and Embedded IoT Networks</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: TECHNICAL SKILLS -->
+    <section id="skills" class="section" aria-label="Technical Skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Competencies</div>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Categorized competencies verified through projects, coursework, and competitive hackathons.</p>
+        </div>
+
+        <!-- Rendered dynamically by app.js -->
+        <div id="skills-grid-container" class="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PROJECTS -->
+    <section id="projects" class="section" aria-label="Key Software Systems">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Key Software Systems</div>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Real-world systems engineered with end-to-end cloud, hardware, and scalable web architectures.</p>
+        </div>
+
+        <!-- Rendered dynamically by app.js -->
+        <div id="projects-grid-container" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ACHIEVEMENTS & HONORS -->
+    <section id="achievements" class="section" aria-label="Achievements and Honors">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Awards & Victories</div>
+          <h2 class="section-title">Achievements & Honors</h2>
+          <p class="section-subtitle">Honors secured through competitive technical pitches, rapid prototyping, and engineering excellence.</p>
+        </div>
+
+        <!-- Rendered dynamically by app.js -->
+        <div id="achievements-grid-container" class="achievements-grid"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CERTIFICATIONS -->
+    <section id="certifications" class="section" aria-label="Verified Certifications">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Verified Credentials</div>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Industry and academic credentials validating core algorithms, AI reasoning, and cloud automation.</p>
+        </div>
+
+        <!-- Rendered dynamically by app.js -->
+        <div id="certs-grid-container" class="certs-grid"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: EDUCATION -->
+    <section id="education" class="section" aria-label="Academic Background">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Academic Background</div>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Chronological academic journey reflecting top-tier distinction and foundational discipline.</p>
+        </div>
+
+        <!-- Rendered dynamically by app.js -->
+        <div id="edu-timeline-container" class="edu-grid"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: LEADERSHIP & ACTIVITIES -->
+    <section id="leadership" class="section" aria-label="Leadership and Activities">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Leadership Impact</div>
+          <h2 class="section-title">Leadership & Activities</h2>
+          <p class="section-subtitle">Demonstrated accountability in team orchestration, campus-wide outreach, and student advocacy.</p>
+        </div>
+
+        <!-- Rendered dynamically by app.js -->
+        <div id="leadership-grid-container" class="leadership-grid"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: CONTACT / RECRUITER SECTION -->
+    <section id="contact" class="section" aria-label="Contact and Inquiries">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Connect</div>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Open to engineering internships, full-stack opportunities, and innovative hackathon collaborations.</p>
+        </div>
+
+        <!-- Contact Cards Container -->
+        <div id="contact-cards-container" class="contact-grid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ACCESSIBLE PROJECT DETAILS MODAL -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-window glass-card">
+      <button type="button" id="modal-close-btn" class="modal-close" aria-label="Close project details dialog">✕</button>
+      <div id="project-modal-details">
+        <!-- Rendered dynamically on click -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-badge">✦</div>
+            <span>Ravipati Rekha Annapurna</span>
+          </div>
+          <p class="footer-tagline">IT Undergraduate • Full-Stack Developer • Multi-Hackathon Winner</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com/rekhaannapurna" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/rekha-annapurna" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:rekhaannapurna.ravipati@gmail.com" class="social-link" title="Send Email">
+            <span>Email</span>
+          </a>
+          <a href="tel:9398613081" class="social-link" title="Direct Phone">
+            <span>Call</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ravipati Rekha Annapurna. Single Source of Truth Verified Portfolio.</p>
+        <p class="footer-note">Built with HTML5, Vanilla CSS3, & Modern JavaScript. No mock backend required.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Scripts (Reliable Order for Local and Hosted Environments) -->
+  <script src="./data/portfolioData.js"></script>
+  <script src="./starfield.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
